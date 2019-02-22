@@ -4,7 +4,7 @@ This is a simple logger for C language.
 ## Usage
 
 ### Include
-Place `log4c.h` file in your header path and add it to the source file that requires logger.
+Place [`log4c.h`](src/include/log4c.h) file in your header path and add it to the source file that requires logger.
 
 ```c
 #include "log4c.h"

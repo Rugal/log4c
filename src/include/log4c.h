@@ -37,5 +37,12 @@ extern int log4c_level;
             ##__VA_ARGS__); \
   }
 
+#define LOG_ALL(fmt, ...)   LOG(LOG4C_ALL, fmt, ##__VA_ARGS__)
+#define LOG_TRACE(fmt, ...) LOG(LOG4C_TRACE, fmt, ##__VA_ARGS__)
+#define LOG_DEBUG(fmt, ...) LOG(LOG4C_DEBUG, fmt, ##__VA_ARGS__)
+#define LOG_INFO(fmt, ...)  LOG(LOG4C_INFO, fmt, ##__VA_ARGS__)
+#define LOG_WARN(fmt, ...)  LOG(LOG4C_WARN, fmt, ##__VA_ARGS__)
+#define LOG_ERROR(fmt, ...) LOG(LOG4C_ERROR, fmt, ##__VA_ARGS__)
+
 #endif
 
